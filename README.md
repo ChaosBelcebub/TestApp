@@ -3,4 +3,4 @@ TestApp
 
 App for testing Android Studio.
 
-I am using [a link](http://developer.android.com/training/index.html)
+I am using the [google tutorial](http://developer.android.com/training/index.html)
