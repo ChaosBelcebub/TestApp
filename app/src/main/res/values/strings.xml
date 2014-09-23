@@ -7,5 +7,6 @@
     <string name="edit_message">Enter message.</string>
     <string name="title_activity_display_message">My Message</string>
     <string name="title_options_activity">Settings</string>
+    <string name="switch1">Display \"Hello world!\"</string>
 
 </resources>

@@ -4,29 +4,42 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.content.Intent;
-import android.widget.TextView;
+import android.widget.CheckBox;
+import android.view.View.OnClickListener;
+import android.view.View;
+import android.widget.Toast;
 
 
 public class OptionsActivity extends Activity {
 
+    private CheckBox chkIos;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_options);
 
-        // Get the message from the intent
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(FirstActivity.EXTRA_MESSAGE);
-
-        // Create the text view
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(message);
-
-        // Set the text view as the activity layout
-        setContentView(textView);
+        addListenerOnChkIos();
     }
 
+    public void addListenerOnChkIos() {
+
+        chkIos = (CheckBox) findViewById(R.id.chkIos);
+
+        chkIos.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                //is chkIos checked?
+                if (((CheckBox) v).isChecked()) {
+                    Toast.makeText(OptionsActivity.this,
+                    "Hello World", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
