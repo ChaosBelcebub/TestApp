@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.michael.testapp.FirstActivity" />
         </activity>
+        <activity
+            android:name=".OptionsActivity"
+            android:label="@string/title_options_activity"
+            android:parentActivityName=".FirstActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.michael.testapp.FirstActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -6,6 +6,6 @@
     <string name="button1">Press me!</string>
     <string name="edit_message">Enter message.</string>
     <string name="title_activity_display_message">My Message</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_options_activity">Settings</string>
 
 </resources>
